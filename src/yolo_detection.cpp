@@ -209,6 +209,7 @@ void YoloDetection::fetchResults(int inputBatchSize) {
     for (auto && i : this -> output) {
         InferenceEngine::CNNLayerPtr layer = net_readed.getLayerByName(i.c_str());
         InferenceEngine::Blob::Ptr blob = outputRequest->GetBlob(i);
+        // ParseYOLOV3Output(layer, blob, this -> resized_im_h, this -> resized_im_w, this -> height, this -> width, 0.6, objects);
         ParseYOLOV3Output(layer, blob, this -> resized_im_h, this -> resized_im_w, this -> height, this -> width, this -> detection_threshold, objects);
     }
     // Filtering overlapping boxes

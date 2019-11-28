@@ -127,3 +127,7 @@ fi
 modName=frozen_yolo_v3
 export yolo16=../data/$modName.xml
 
+
+
+modName=frozen_darknet_yolov3_model
+export yoloLong=/home/intelex/WorkSpaces/tensorflow-yolo-v3/$modName.xml

@@ -170,13 +170,18 @@ const std::vector<std::string> YOLO_LABELS = {
 ,"Toothbrush"
 };
 
-const cv::Scalar COLOR_TRUCK = cv::Scalar(255, 0, 255);
-const cv::Scalar COLOR_BUS = cv::Scalar(255, 0, 0);
-const cv::Scalar COLOR_BIKE = cv::Scalar(0, 255, 0);
-const cv::Scalar COLOR_MOTORBIKE = cv::Scalar(0, 0, 255);
-const cv::Scalar COLOR_UNKNOWN = cv::Scalar(0, 0, 0);
-const cv::Scalar COLOR_CAR = cv::Scalar(0, 255, 255);
-const cv::Scalar COLOR_PERSON = cv::Scalar(255, 255, 0);
+/// format color value BGR , not RGB!!!!
+
+const cv::Scalar COLOR_TRUCK = cv::Scalar(255, 0, 255); //PINK
+const cv::Scalar COLOR_BUS = cv::Scalar(255, 0, 0); //BLUE
+const cv::Scalar COLOR_BIKE = cv::Scalar(0, 255, 0); //GREEN
+const cv::Scalar COLOR_MOTORBIKE = cv::Scalar(0, 0, 255); //RED
+const cv::Scalar COLOR_UNKNOWN = cv::Scalar(0, 0, 0); //BLACK
+const cv::Scalar COLOR_CAR = cv::Scalar(0, 255, 255); //yellow
+const cv::Scalar COLOR_PERSON = cv::Scalar(255, 255, 0); //cyan
+
+// const cv::Scalar COLOR_PERSON = cv::Scalar(0, 255, 255);
+// const cv::Scalar COLOR_CAR = cv::Scalar(255, 255, 0);
 
 std::string getLabelStr(int label);
 
